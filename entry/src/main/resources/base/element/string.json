@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "entry_desc",
+      "value": "description"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "SwipeTxt",
+      "value": "滑动完成验证"
+    },
+    {
+      "name": "RotateTxt",
+      "value": "滑动完成验证"
+    },
+    {
+      "name": "successNtf",
+      "value": "验证成功!"
+    },
+    {
+      "name": "failNtf",
+      "value": "验证失败!"
+    }
+  ]
+}
