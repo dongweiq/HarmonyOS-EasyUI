@@ -1,4 +1,4 @@
-
+//卡片视图组件
 //暴露组件的属性
 export class CardViewAttribute{
   //卡片的默认名字

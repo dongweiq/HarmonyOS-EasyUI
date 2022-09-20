@@ -1,6 +1,6 @@
 
 @Component
-export struct simpleSwipe{
+export struct SimpleSwipe{
   //组件宽高
   @State simpleWidth: number = 325;
   @State simpleHeight: number = 100;

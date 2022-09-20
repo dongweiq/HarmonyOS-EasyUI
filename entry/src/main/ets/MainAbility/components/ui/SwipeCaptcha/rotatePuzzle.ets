@@ -3,7 +3,7 @@ import { ImageItem } from '../../beans/ImageItem'
 //import { MiniCanvas, Paint, ICanvas } from '@ohos/mini_canvas'
 
 @Component
-export struct rotatePuzzle{
+export struct RotatePuzzle{
 
   @StorageLink("ImgList") ImgList: ImageItem[] = [];
 

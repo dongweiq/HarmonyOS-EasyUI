@@ -1,7 +1,7 @@
 import { ImageItem } from '../../beans/ImageItem'
 
 @Component
-export struct swipePuzzle {
+export struct SwipePuzzle {
   @StorageLink("ImgList") ImgList: ImageItem[] = [];
 
   //
