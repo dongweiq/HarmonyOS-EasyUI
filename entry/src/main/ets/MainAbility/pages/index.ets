@@ -1,3 +1,23 @@
+
+
+/**
+ * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+
+
 //滑动验证测试组件导入
 import { SwipePuzzle } from '../components/ui/SwipeCaptcha/SwipePuzzle'
 import { SimpleSwipe } from '../components/ui/SwipeCaptcha/SimpleSwipe'
@@ -101,42 +121,42 @@ struct Index {
         //          .backgroundColor("#ffe5c2c2")
         //测试成功
         //图片缩放组件测试
-        //        Column({space: 5}){
-        //          ImageZoom();//引入imageZoom组件
-        //        }
-        //        .width('100%')
-        //        .height('100%')
-        //        .borderRadius(10)
-        //        .onAppear(() => {
-        //          this.Img = new ImageItem("ImageZoom_dog.jpg");
-        //        })
+//                Column({space: 5}){
+//                  ImageZoom();//引入imageZoom组件
+//                }
+//                .width('100%')
+//                .height('100%')
+//                .borderRadius(10)
+//                .onAppear(() => {
+//                  this.Img = new ImageItem("ImageZoom_dog.jpg");
+//                })
         //测试成功
 
         //图片裁剪组件测试
-        //        Column({space: 5}){
-        //          ImageCrop();//引入ImageCrop组件
-        //        }
-        //        .width('100%')
-        //        .height('100%')
-        //        .borderRadius(10)
-        //        .onAppear(() => {
-        //          this.Img = new ImageItem('ImageCrop_dog.jpg');
-        //        })
+//                Column({space: 5}){
+//                  ImageCrop();//引入ImageCrop组件
+//                }
+//                .width('100%')
+//                .height('100%')
+//                .borderRadius(10)
+//                .onAppear(() => {
+//                  this.Img = new ImageItem('ImageCrop_dog.jpg');
+//                })
         //测试成功
 
         //日历组件测试
-        //        Column() {
-        //          Button('显示日历弹框')
-        //            .onClick(() => {
-        //              this.dialogController.open()
-        //            }).backgroundColor(0x317aff)
-        //          Text(this.selectedDay)
-        //            .fontSize(30)
-        //            .width('100%')
-        //            .textAlign(TextAlign.Center)
-        //        }
-        //        .width('100%')
-        //        .margin({ top: 5 })
+//                Column() {
+//                  Button('显示日历弹框')
+//                    .onClick(() => {
+//                      this.dialogController.open()
+//                    }).backgroundColor(0x317aff)
+//                  Text(this.selectedDay)
+//                    .fontSize(30)
+//                    .width('100%')
+//                    .textAlign(TextAlign.Center)
+//                }
+//                .width('100%')
+//                .margin({ top: 5 })
         //测试成功
 
         //动画搜索框组件测试
@@ -191,7 +211,7 @@ struct Index {
         //测试失败，报错
 
         //LabelView组件测试
-        //Button组件
+        //        //Button组件
         //        Stack(){
         //          Button("Button")
         //            .width(300)
