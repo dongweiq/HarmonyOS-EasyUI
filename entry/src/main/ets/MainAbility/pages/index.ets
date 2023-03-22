@@ -80,24 +80,24 @@ struct Index {
 
 
         //滑动验证码测试
-        //        Column() {
-        //          SimpleSwipe()
-        //          SwipePuzzle()
-        //          RotatePuzzle()
-        //        }
-        //        .onAppear(()=>{
-        //          this.ImgList = [
-        //            new ImageItem('SwipeCaptcha_test1.jpg'),
-        //            new ImageItem('SwipeCaptcha_test2.jpg'),
-        //            new ImageItem('SwipeCaptcha_test3.jpg'),
-        //            new ImageItem('SwipeCaptcha_test4.jpg'),
-        //            new ImageItem('SwipeCaptcha_test5.jpg'),
-        //            new ImageItem('SwipeCaptcha_test6.jpg'),
-        //            new ImageItem('SwipeCaptcha_test7.jpg'),
-        //            new ImageItem('SwipeCaptcha_test8.jpg')
-        //          ];
-        //          console.log("【swipePuzzle】ImgList.length = " + this.ImgList.length);
-        //        })
+                Column() {
+                  SimpleSwipe()
+                  SwipePuzzle()
+                  RotatePuzzle()
+                }
+                .onAppear(()=>{
+                  this.ImgList = [
+                    new ImageItem('SwipeCaptcha_test1.jpg'),
+                    new ImageItem('SwipeCaptcha_test2.jpg'),
+                    new ImageItem('SwipeCaptcha_test3.jpg'),
+                    new ImageItem('SwipeCaptcha_test4.jpg'),
+                    new ImageItem('SwipeCaptcha_test5.jpg'),
+                    new ImageItem('SwipeCaptcha_test6.jpg'),
+                    new ImageItem('SwipeCaptcha_test7.jpg'),
+                    new ImageItem('SwipeCaptcha_test8.jpg')
+                  ];
+                  console.log("【swipePuzzle】ImgList.length = " + this.ImgList.length);
+                })
         //测试成功
 
         //图片窗帘组件测试
