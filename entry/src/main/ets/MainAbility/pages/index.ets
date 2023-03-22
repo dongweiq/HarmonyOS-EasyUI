@@ -101,8 +101,8 @@ struct Index {
         //测试成功
 
         //图片窗帘组件测试
-        //        imageCurtain()    //默认情况测试
-        //        imageCurtain({    //修改图片测试
+        //        ImageCurtain()    //默认情况测试
+        //        ImageCurtain({    //修改图片测试
         //          imgName:"imageCurtain_test1.jpg"
         //        })
         //测试成功
