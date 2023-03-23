@@ -1,5 +1,3 @@
-
-
 /**
  * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 //图片窗帘组件
 @Component
@@ -32,7 +29,7 @@ export struct ImageCurtain{
   //鼠标的坐标
   @State mouseXBias: number = 0
   @State mouseYBias: number = 0
-  @State opacity: number = 0
+  @State opacity_ImageCurtain: number = 0
   //图片的起始坐标
   private ImgStartXBias: number = 10
   private ImgStartYBias: number = 10
@@ -84,7 +81,7 @@ export struct ImageCurtain{
             y: this.ImgStartYBias
           })
             //遮罩的透明度 计算
-          .opacity(this.opacity)
+          .opacity(this.opacity_ImageCurtain)
             //利用颜色渐变模拟窗帘折叠效果
           .linearGradient({
             angle: 90,
@@ -143,7 +140,7 @@ export struct ImageCurtain{
 
         .onTouch((event: TouchEvent) => {
           //遮罩的透明度属性opacity 用一个公式模拟计算
-          this.opacity = (1 - this.ImgRealWidth / this.ImgWidth) * (0.5 + this.ImgRealWidth / this.ImgWidth)
+          this.opacity_ImageCurtain = (1 - this.ImgRealWidth / this.ImgWidth) * (0.5 + this.ImgRealWidth / this.ImgWidth)
           //触摸判断
           if (event.type === TouchType.Down) {
           }
@@ -182,7 +179,7 @@ export struct ImageCurtain{
 
         .onTouch((event: TouchEvent) => {
           //遮罩的透明度属性opacity 用一个公式模拟计算
-          this.opacity = (1 - this.ImgRealWidth / this.ImgWidth) * (0.5 + this.ImgRealWidth / this.ImgWidth)
+          this.opacity_ImageCurtain = (1 - this.ImgRealWidth / this.ImgWidth) * (0.5 + this.ImgRealWidth / this.ImgWidth)
           //触摸判断
           if (event.type === TouchType.Down) {
           }

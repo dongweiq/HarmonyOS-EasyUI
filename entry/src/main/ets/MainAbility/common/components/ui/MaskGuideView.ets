@@ -1,5 +1,3 @@
-
-
 /**
  * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +13,6 @@
  * limitations under the License.
  */
 
-
 //蒙版引导视图组件
 @Component
 export struct MaskGuideView {
@@ -23,7 +20,7 @@ export struct MaskGuideView {
   private setting: RenderingContextSettings = new RenderingContextSettings(true)
   private context: CanvasRenderingContext2D = new CanvasRenderingContext2D(this.setting)
   private context1: CanvasRenderingContext2D = new CanvasRenderingContext2D(this.setting)
-  @State touchable: boolean = false
+  @State touchable_MaskGuideView: boolean = false
   @State isShow: boolean = true
   private tipMessage: string = "点击此区域，可以进入会员中心界面哦!"
   private selectAreaPositionX: number = 125;
@@ -47,7 +44,7 @@ export struct MaskGuideView {
               this.context.fillRect(0, 0, 360, 780)
 //              this.context.clearRect(this.selectAreaPositionX, this.selectAreaPositionY, this.selectAreaWidth, this.selectAreaHeight)//选中蒙版中想要提示的位置
             })
-            .touchable(this.touchable)
+            .touchable(this.touchable_MaskGuideView)
         }
       }
       Column() {

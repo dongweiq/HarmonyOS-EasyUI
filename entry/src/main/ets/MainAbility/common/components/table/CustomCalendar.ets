@@ -1,5 +1,3 @@
-
-
 /**
  * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,8 +13,6 @@
  * limitations under the License.
  */
 
-
-// @ts-nocheck
 //@ts-nocheck
 @CustomDialog
 export struct CustomCalendar {

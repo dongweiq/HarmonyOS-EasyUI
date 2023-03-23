@@ -1,5 +1,3 @@
-
-
 /**
  * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,48 +13,48 @@
  * limitations under the License.
  */
 
-
-
-
 //滑动验证测试组件导入
-import { SwipePuzzle } from '../components/ui/SwipeCaptcha/SwipePuzzle'
-import { SimpleSwipe } from '../components/ui/SwipeCaptcha/SimpleSwipe'
-import { RotatePuzzle } from '../components/ui/SwipeCaptcha/RotatePuzzle'
-import { ImageItem } from '../components/beans/ImageItem'
+import { SwipePuzzle } from '../common/components/ui/SwipeCaptcha/SwipePuzzle'
+import { SimpleSwipe } from '../common/components/ui/SwipeCaptcha/SimpleSwipe'
+import { RotatePuzzle } from '../common/components/ui/SwipeCaptcha/RotatePuzzle'
+import { ImageItem } from '../common/components/beans/ImageItem'
 
 //图片窗帘组件导入
-import {ImageCurtain} from "../components/ui/ImageCurtain"
+import {ImageCurtain} from "../common/components/ui/ImageCurtain"
 
 //倒计时组件导入
-import { CountDown } from "../components/util/CountDown"
+import { CountDown } from "../common/components/util/CountDown"
 
 //图片缩放组件导入
-import { ImageZoom } from "../components/ui/ImageZoom"
+import { ImageZoom } from "../common/components/ui/ImageZoom"
 
 //图片裁剪组件导入
-import { ImageCrop } from "../components/ui/ImageCrop"
+import { ImageCrop } from "../common/components/ui/ImageCrop"
 
 //日历组件导入
-import {  CustomCalendar } from "../components/table/CustomCalendar"
+import {  CustomCalendar } from "../common/components/table/CustomCalendar"
 
 //动画搜索框组件导入
-import { SearchView } from "../components/ui/SearchView"
+import { SearchView } from "../common/components/ui/SearchView"
 
 //图片按钮组件导入
-import { ImageButton } from "../components/ui/ImageButton"
+import { ImageButton } from "../common/components/ui/ImageButton"
 import prompt from '@ohos.prompt';
 
 //蒙版引导视图组件引入
-import { MaskGuideView } from "../components/ui/MaskGuideView"
+import { MaskGuideView } from "../common/components/ui/MaskGuideView"
 
 //图片轮播组件导入
-import { ImageSwiper } from "../components/ui/ImageSwiper"
+import { ImageSwiper } from "../common/components/ui/ImageSwiper"
 
 //加载组件导入
 //import { Loading } from "../components/ui/Loading"
 
 //标签组件导入
-import { LabelView } from "../components/ui/LabelView"
+import { LabelView } from "../common/components/ui/LabelView"
+
+
+import { CardView } from "../common/components/ui/CardView"
 
 @Entry
 @Component
@@ -85,29 +83,29 @@ struct Index {
 
 
         //滑动验证码测试
-        //        Column() {
-        //          SimpleSwipe()
-        //          SwipePuzzle()
-        //          RotatePuzzle()
-        //        }
-        //        .onAppear(()=>{
-        //          this.ImgList = [
-        //            new ImageItem('SwipeCaptcha_test1.jpg'),
-        //            new ImageItem('SwipeCaptcha_test2.jpg'),
-        //            new ImageItem('SwipeCaptcha_test3.jpg'),
-        //            new ImageItem('SwipeCaptcha_test4.jpg'),
-        //            new ImageItem('SwipeCaptcha_test5.jpg'),
-        //            new ImageItem('SwipeCaptcha_test6.jpg'),
-        //            new ImageItem('SwipeCaptcha_test7.jpg'),
-        //            new ImageItem('SwipeCaptcha_test8.jpg')
-        //          ];
-        //          console.log("【swipePuzzle】ImgList.length = " + this.ImgList.length);
-        //        })
+//                Column() {
+//                  SimpleSwipe()
+//                  SwipePuzzle()
+//                  RotatePuzzle()
+//                }
+//                .onAppear(()=>{
+//                  this.ImgList = [
+//                    new ImageItem('SwipeCaptcha_test1.jpg'),
+//                    new ImageItem('SwipeCaptcha_test2.jpg'),
+//                    new ImageItem('SwipeCaptcha_test3.jpg'),
+//                    new ImageItem('SwipeCaptcha_test4.jpg'),
+//                    new ImageItem('SwipeCaptcha_test5.jpg'),
+//                    new ImageItem('SwipeCaptcha_test6.jpg'),
+//                    new ImageItem('SwipeCaptcha_test7.jpg'),
+//                    new ImageItem('SwipeCaptcha_test8.jpg')
+//                  ];
+//                  console.log("【swipePuzzle】ImgList.length = " + this.ImgList.length);
+//                })
         //测试成功
 
         //图片窗帘组件测试
-        //        imageCurtain()    //默认情况测试
-        //        imageCurtain({    //修改图片测试
+        //        ImageCurtain()    //默认情况测试
+        //        ImageCurtain({    //修改图片测试
         //          imgName:"imageCurtain_test1.jpg"
         //        })
         //测试成功
@@ -246,6 +244,17 @@ struct Index {
         //          offsetY: 15
         //        })
         //测试成功
+
+
+
+        CardView({
+          attribute:{
+            name: "aaa",
+            icon: "CardView_test1.png",
+            CardImage: "CardView_test1.png"
+          }
+        })
+
 
       }
     }

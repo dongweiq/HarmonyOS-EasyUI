@@ -1,5 +1,3 @@
-
-
 /**
  * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 //卡片视图组件
 //暴露组件的属性
@@ -80,6 +77,7 @@ export struct CardView {
           Row({ space: 10}) {
             Image($rawfile(this.attribute.icon))
               .height(50)
+              .width(50)
               .borderWidth(1)
               .borderStyle(BorderStyle.Solid)
               .borderColor("#ffc3c3c3")

@@ -1,5 +1,3 @@
-
-
 /**
  * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,25 +12,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-
 import { ImageItem } from '../../beans/ImageItem'
 
 @Component
 export struct SwipePuzzle {
   @StorageLink("ImgList") ImgList: ImageItem[] = [];
-
-  //
-  aboutToAppear() {
-    //    let xMin = this.verifierWidth + this.swipeCircleRadius + this.verifierWidth * this.borderPadding;
-    //    let xMax = this.ImgWidth - this.verifierWidth - this.ImgWidth * this.borderPadding;
-    //    let yMin = this.swipeCircleRadius + this.verifierHeight * this.borderPadding;
-    //    let yMax = this.ImgHeight - this.verifierHeight - this.ImgHeight * this.borderPadding;
-    //
-    //    this.verifierXBias = Math.round(Math.random() * (xMax - xMin) + xMin);
-    //    this.verifierYBias = Math.round(Math.random() * (yMax - yMin) + yMin);
-    console.info("+++++++++++++++" + this.verifierXBias + "   " + this.verifierYBias)
-  }
 
   /**
    * 组件宽高
@@ -40,10 +24,14 @@ export struct SwipePuzzle {
   @State swipeWidth: number = 325;
   @State swipeHeight: number = 100;
 
+  //滑轨宽度
+  @State simpleRoadWidth: number = 280;
+
   /**
    * 图片相关参数
    */
-  @State CurImgUrl_id: number = 1; //当前拼图图片id
+  @State CurImgUrl_id: number = 0; //当前拼图图片id
+  @State CurImgUrl: string = 'SwipeCaptcha_test1.jpg';
   private ImgWidth: number = 280;
   private ImgHeight: number = 220;
 
@@ -104,9 +92,9 @@ export struct SwipePuzzle {
    * 提示文字的可见性
    */
   @State simpleTextVisibility: Visibility = Visibility.Visible;
-  private settings: RenderingContextSettings = new RenderingContextSettings(true);
-  private context: CanvasRenderingContext2D = new CanvasRenderingContext2D(this.settings);
-  private img: ImageBitmap = null;
+
+
+
 
   build() {
 
@@ -116,7 +104,7 @@ export struct SwipePuzzle {
         Row() {
           Stack() {
             //拼图图片
-            Image($rawfile(this.ImgList[this.CurImgUrl_id].name))
+            Image($rawfile(this.CurImgUrl))
               .height(220)
               .padding({ bottom: 4 })
               .onAppear(() => {
@@ -126,7 +114,7 @@ export struct SwipePuzzle {
                 // 2.缺口不与滑块重叠，且不越界
                 this.swipeCircleRadius = this.swipeCircleRadius * this.verifierWidth / 50;
                 this.CurImgUrl_id = Math.round(Math.random() * (8 - 1))
-                this.img = new ImageBitmap("/common/images/" + this.ImgList[this.CurImgUrl_id].name);
+                this.CurImgUrl = this.ImgList[this.CurImgUrl_id].name
                 this.swipeCircleRadius = this.swipeCircleRadius * this.verifierWidth / 50;
 
                 let xMin = this.verifierWidth + this.swipeCircleRadius + this.verifierWidth * this.borderPadding;
@@ -136,10 +124,8 @@ export struct SwipePuzzle {
                 // x-y范围内的随机整数表示为Math.round(Math.random()*(y-x)+x)
                 this.verifierXBias = Math.round(Math.random() * (xMax - xMin) + xMin);
                 this.verifierYBias = Math.round(Math.random() * (yMax - yMin) + yMin);
-                console.info("+++++++++++++++" + this.verifierXBias + "   " + this.verifierYBias)
 
-                console.log("【swipePuzzle】当前图片文件名为：" + this.ImgList[this.CurImgUrl_id].name);
-
+                console.log("【swipePuzzle】当前图片文件名为：" + this.CurImgUrl);
                 console.log("【swipePuzzle】 ImgList.length = " + this.ImgList.length);
                 console.log("【swipePuzzle】verifierXBias = " + this.verifierXBias + "\tverifierYBias = " + this.verifierYBias + "\tCurImgUrl_id = " + this.CurImgUrl_id);
               })
@@ -183,24 +169,7 @@ export struct SwipePuzzle {
 
             Stack() {
               //拼图滑块顶部
-//              Flex()
-//                .backgroundImage($rawfile(this.ImgList[this.CurImgUrl_id].name), ImageRepeat.NoRepeat)
-//                .width(2 * this.swipeCircleRadius)
-//                .height(2 * this.swipeCircleRadius)
-//                  //                .backgroundImagePosition(Alignment.Center)
-//                .backgroundImageSize(ImageSize.Auto)
-//                .borderRadius(this.swipeCircleRadius)
-//                .offset({
-//                  x: 0,
-//                  y: -0.5 * this.verifierWidth
-//                })
-//                .backgroundImagePosition({
-//                  x: -this.verifierXBias,
-//                  y: -this.verifierYBias + 0.5 * this.swipeCircleRadius
-//                })
-//                .borderWidth(2)
-//                .borderColor(Color.Blue)
-              Image($rawfile(this.ImgList[this.CurImgUrl_id].name))
+              Image($rawfile(this.CurImgUrl))
                 .width(280)
                 .height(220)
                   //              .clip(new Path({commands: "M"+vp2px(100)+" "+vp2px(80)+" L"+vp2px(150)+" "+vp2px(80)+" L"+vp2px(150)+" "+vp2px(130)+" L"+vp2px(100)+" "+vp2px(130)+" Z"}))
@@ -249,7 +218,7 @@ export struct SwipePuzzle {
 //                .borderWidth(2)
 //                .borderColor(Color.Yellow)
               //右半圆图片匹配
-              Image($rawfile(this.ImgList[this.CurImgUrl_id].name))
+              Image($rawfile(this.CurImgUrl))
                 .width(280)
                 .height(220)
                   //              .clip(new Path({commands: "M"+vp2px(100)+" "+vp2px(80)+" L"+vp2px(150)+" "+vp2px(80)+" L"+vp2px(150)+" "+vp2px(130)+" L"+vp2px(100)+" "+vp2px(130)+" Z"}))
@@ -275,7 +244,7 @@ export struct SwipePuzzle {
               /**
                * 方块图片匹配
                */
-              Image($rawfile(this.ImgList[this.CurImgUrl_id].name))
+              Image($rawfile(this.CurImgUrl))
                 .width(280)
                 .height(220)
                   //              .clip(new Path({commands: "M"+vp2px(100)+" "+vp2px(80)+" L"+vp2px(150)+" "+vp2px(80)+" L"+vp2px(150)+" "+vp2px(130)+" L"+vp2px(100)+" "+vp2px(130)+" Z"}))
@@ -354,7 +323,9 @@ export struct SwipePuzzle {
                 //重新生成缺口
                 this.swipeCircleRadius = this.swipeCircleRadius * this.verifierWidth / 50;
                 this.CurImgUrl_id = Math.round(Math.random() * (8 - 1))
-                this.img = new ImageBitmap("/common/images/" + this.ImgList[this.CurImgUrl_id].name);
+                this.CurImgUrl = this.ImgList[this.CurImgUrl_id].name
+                console.log("【swipePuzzle】当前图片文件名为：" + this.CurImgUrl);
+
                 console.log("=============【swipePuzzle】生成函数====")
                 this.swipeCircleRadius = this.swipeCircleRadius * this.verifierWidth / 50;
 
@@ -437,18 +408,21 @@ export struct SwipePuzzle {
         //事件3：在滑动区域内滑动
         .onDragMove((event: DragEvent, extraParams: String) => {
           let curX = event.getX();
-          console.log("【swipePuzzle】Moving...")
+          console.log("【simpleSwipe】Moving...")
           // 改变滑块位置且确保不越界
-          if (curX <= this.StartRealXBias) {
+          if(curX <= this.StartRealXBias ){
             this.verifierPosLeft = 0;
           }
-          else if (curX >= 320) {
-            this.verifierPosLeft = 320;
+          else if(curX >= this.simpleRoadWidth - this.verifierWidth){
+            this.verifierPosLeft = this.simpleRoadWidth - this.verifierWidth;
           }
-          else {
-              (curX - this.StartRealXBias) > 320 ? this.verifierPosLeft = 320 : this.verifierPosLeft = (curX - this.StartRealXBias);
+          else{
+              (curX - this.StartRealXBias) > this.simpleRoadWidth - this.verifierWidth ? this.verifierPosLeft = this.simpleRoadWidth - this.verifierWidth : this.verifierPosLeft = (curX - this.StartRealXBias);
           }
-          console.log("【swipePuzzle】curX = " + curX + "\tStartRealXBias = " + this.StartRealXBias + "\tverifierPosLeft = " + this.verifierPosLeft)
+          if(this.verifierPosLeft > this.simpleRoadWidth - this.verifierWidth)
+            this.verifierPosLeft = this.simpleRoadWidth - this.verifierWidth;
+
+          console.log("【simpleSwipe】curX = " + curX + "\t simpleStartRealXBias = " + this.StartRealXBias + "\t simpleBlockPosLeft = " + this.verifierPosLeft)
         })
         //事件4：离开滑动区域
         .onDragLeave((event: DragEvent, extraParams: string) => {
@@ -487,7 +461,7 @@ export struct SwipePuzzle {
 
             this.swipeCircleRadius = this.swipeCircleRadius * this.verifierWidth / 50;
             this.CurImgUrl_id = Math.round(Math.random() * (8 - 1) + 1)
-            this.img = new ImageBitmap("/common/images/" + this.ImgList[this.CurImgUrl_id].name);
+            this.CurImgUrl = this.ImgList[this.CurImgUrl_id].name
             console.log("=============【swipePuzzle】生成函数====")
             this.swipeCircleRadius = this.swipeCircleRadius * this.verifierWidth / 50;
 

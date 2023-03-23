@@ -1,5 +1,3 @@
-
-
 /**
  * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,22 +12,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-
 import { ImageItem } from '../../beans/ImageItem'
 //import { MiniCanvas, Paint, ICanvas } from '@ohos/mini_canvas'
 
 @Component
 export struct RotatePuzzle{
 
-  @StorageLink("ImgList") ImgList: ImageItem[] = [];
+  @StorageLink("ImgList") ImgList: ImageItem[] = [new ImageItem('SwipeCaptcha_test1.jpg')];
 
   //组件宽高
   @State swipeWidth: number = 325;
   @State swipeHeight: number = 100;
 
+  //滑轨宽度
+  @State simpleRoadWidth: number = 280;
+
   //图片相关参数
-  @State CurImgUrl_id: number = 1;//当前拼图图片id
+  @State CurImgUrl_id: number = 0;//当前拼图图片id
+  @State CurImgUrl: string = 'SwipeCaptcha_test1.jpg';
   @State rotateImgWidth: number = 280;
   @State rotateImgHeight: number = 220;
 
@@ -59,10 +59,6 @@ export struct RotatePuzzle{
   //提示文字的可见性
   @State simpleTextVisibility: Visibility = Visibility.Visible;
 
-  private settings: RenderingContextSettings = new RenderingContextSettings(true)
-  private context: CanvasRenderingContext2D = new CanvasRenderingContext2D(this.settings)
-  private offContext: OffscreenCanvasRenderingContext2D = new OffscreenCanvasRenderingContext2D(600, 600, this.settings)
-
   build(){
 
     Stack({alignContent: Alignment.Center}){
@@ -71,7 +67,7 @@ export struct RotatePuzzle{
         Row(){
           Stack(){
             //拼图图片
-            Image($rawfile(this.ImgList[this.CurImgUrl_id].name))
+            Image($rawfile(this.CurImgUrl))
               .height(220)
               .padding({bottom:4})
               .onAppear(() =>{
@@ -79,6 +75,7 @@ export struct RotatePuzzle{
                 let maxAgl = this.rotateMaxAngle;
                 this.rotateVerifieeAgl = Math.round(Math.random() * (maxAgl - minAgl) + minAgl);
                 this.CurImgUrl_id = Math.round(Math.random() * (8 - 1) + 1);
+                this.CurImgUrl = this.ImgList[this.CurImgUrl_id].name
 
                 console.log("【rotatePuzzle】ImgList.length = " + this.ImgList.length);
                 console.log("【rotatePuzzle】angel = " + this.rotateVerifieeAgl + "\tCurImgUrl_id = " + this.CurImgUrl_id);
@@ -87,7 +84,7 @@ export struct RotatePuzzle{
 
             //旋转区域
             Stack(){
-              Image($rawfile(this.ImgList[this.CurImgUrl_id].name))
+              Image($rawfile(this.CurImgUrl))
                 .height(220)
                 .width(280)
                 .padding({bottom:4})
@@ -150,6 +147,7 @@ export struct RotatePuzzle{
               })
               .onClick(() => {
                 this.CurImgUrl_id = Math.round(Math.random() * (8 - 1) + 1);
+                this.CurImgUrl = this.ImgList[this.CurImgUrl_id].name
                 let minAgl = this.rotateMinAngle;
                 let maxAgl = this.rotateMaxAngle;
                 this.rotateVerifieeAgl = Math.round(Math.random() * (maxAgl - minAgl) + minAgl);
@@ -229,11 +227,11 @@ export struct RotatePuzzle{
             this.rotateBlockPosLeft = 0;
             this.rotateVerifieeAgl = this.rotateStartAgl;
           }
-          else if(curX >= 320){
-            this.rotateBlockPosLeft = 320;
+          else if(curX >= this.rotateImgWidth - this.rotateBlockWidth){
+            this.rotateBlockPosLeft = this.rotateImgWidth - this.rotateBlockWidth;
           }
           else{
-            (curX - this.rotateStartRealXBias) > 320 ? this.rotateBlockPosLeft = 320 : this.rotateBlockPosLeft = (curX - this.rotateStartRealXBias);
+              (curX - this.rotateStartRealXBias) > this.rotateImgWidth - this.rotateBlockWidth ? this.rotateBlockPosLeft = this.rotateImgWidth - this.rotateBlockWidth : this.rotateBlockPosLeft = (curX - this.rotateStartRealXBias);
             this.rotateVerifieeAgl = this.rotateStartAgl - 360 * (this.rotateBlockPosLeft / (this.rotateImgWidth - this.rotateBlockWidth))
           }
           console.log("【rotatePuzzle】 curX = " + curX + "\trotateStartRealXBias = " + this.rotateStartRealXBias + "\trotateBlockPosLeft = " + this.rotateBlockPosLeft + "\t rotateStartAgl = " +this.rotateStartAgl + "\trotateVerifieeAgl = " + this.rotateVerifieeAgl)
@@ -273,6 +271,7 @@ export struct RotatePuzzle{
             let maxAgl = this.rotateMaxAngle;
             this.rotateVerifieeAgl = Math.round(Math.random() * (maxAgl - minAgl) + minAgl);
             this.CurImgUrl_id = Math.round(Math.random() * (8 - 1) + 1)
+            this.CurImgUrl = this.ImgList[this.CurImgUrl_id].name
             console.log("【rotatePuzzle】 angel = " + this.rotateVerifieeAgl + "\tCurImgUrl_id = " + this.CurImgUrl_id);
           }, 1500)
         })
