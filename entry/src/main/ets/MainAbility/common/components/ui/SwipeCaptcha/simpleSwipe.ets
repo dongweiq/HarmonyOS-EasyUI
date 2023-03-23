@@ -18,6 +18,9 @@ export struct SimpleSwipe{
   @State simpleWidth: number = 325;
   @State simpleHeight: number = 100;
 
+  //滑轨宽度
+  @State simpleRoadWidth: number = 280;
+
   //滑块的动态位置
   @State simpleBlockPosLeft: number = 0;
 
@@ -116,12 +119,14 @@ export struct SimpleSwipe{
           if(curX <= this.simpleStartRealXBias ){
             this.simpleBlockPosLeft = 0;
           }
-          else if(curX >= 320){
-            this.simpleBlockPosLeft = 320;
+          else if(curX >= this.simpleRoadWidth - this.simpleBlockWidth){
+            this.simpleBlockPosLeft = this.simpleRoadWidth - this.simpleBlockWidth;
           }
           else{
-            (curX - this.simpleStartRealXBias) > 320 ? this.simpleBlockPosLeft = 320 : this.simpleBlockPosLeft = (curX - this.simpleStartRealXBias);
+            (curX - this.simpleStartRealXBias) > this.simpleRoadWidth - this.simpleBlockWidth ? this.simpleBlockPosLeft = this.simpleRoadWidth - this.simpleBlockWidth : this.simpleBlockPosLeft = (curX - this.simpleStartRealXBias);
           }
+          if(this.simpleBlockPosLeft > this.simpleRoadWidth - this.simpleBlockWidth)
+            this.simpleBlockPosLeft = this.simpleRoadWidth - this.simpleBlockWidth;
           console.log("【simpleSwipe】curX = " + curX + "\t simpleStartRealXBias = " + this.simpleStartRealXBias + "\t simpleBlockPosLeft = " + this.simpleBlockPosLeft)
         })
         //事件4：离开滑动区域
@@ -134,7 +139,7 @@ export struct SimpleSwipe{
           this.simpleEndTime = Date.now();
 
           //检查滑块位置进行验证并显示验证结果
-          if(this.simpleBlockPosLeft >= (this.simpleWidth - this.simpleBlockWidth) * this.simpleVerifyThreshold){
+          if(this.simpleBlockPosLeft >= (this.simpleRoadWidth - this.simpleBlockWidth) * this.simpleVerifyThreshold){
             //验证成功
             this.simpleSlideColor = '#008000';
             this.simpleTextVisibility = Visibility.Hidden;

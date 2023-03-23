@@ -77,6 +77,7 @@ export struct CardView {
           Row({ space: 10}) {
             Image($rawfile(this.attribute.icon))
               .height(50)
+              .width(50)
               .borderWidth(1)
               .borderStyle(BorderStyle.Solid)
               .borderColor("#ffc3c3c3")
