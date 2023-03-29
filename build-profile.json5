@@ -1,18 +1,7 @@
 {
   "app": {
     "signingConfigs": [
-      {
-        "name": "default",
-        "material": {
-          "certpath": "C:\\Users\\zhuwe\\.ohos\\config\\openharmony\\auto_ohos_default_ohos_easyUI_com.example.ohos_easyui.cer",
-          "storePassword": "0000001B31CA0964803863029DBB6B079D7960912F58578EDC007930ED0D1A560C158C34595DD0207E5BED",
-          "keyAlias": "debugKey",
-          "keyPassword": "0000001B9A438CA2D3E208D907D11DC439D338904A1225339A69B461CBA4EE657C1EDDEFBE15E5F017D0E8",
-          "profile": "C:\\Users\\zhuwe\\.ohos\\config\\openharmony\\auto_ohos_default_ohos_easyUI_com.example.ohos_easyui.p7b",
-          "signAlg": "SHA256withECDSA",
-          "storeFile": "C:\\Users\\zhuwe\\.ohos\\config\\openharmony\\auto_ohos_default_ohos_easyUI_com.example.ohos_easyui.p12"
-        }
-      }
+
     ],
     "compileSdkVersion": 9,
     "compatibleSdkVersion": 9,

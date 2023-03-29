@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+import display from '@ohos.display';
 //蒙版引导视图组件
 @Component
 export struct MaskGuideView {
@@ -31,6 +31,17 @@ export struct MaskGuideView {
   @StorageLink("index") index:number = 1
   @State visible:Visibility = Visibility.Visible
 
+  private screenWidth:number = 0
+  private screenHeight:number = 0
+
+  aboutToAppear(){
+    this.screenWidth = display.getDefaultDisplaySync().width   //获取设备屏幕宽度
+    this.screenHeight = display.getDefaultDisplaySync().height  //获取设备屏幕高度
+    if(this.screenWidth == 0 && this.screenHeight == 0){        //如果是在previewer中运行，设为固定值
+      this.screenWidth = 360
+      this.screenHeight = 780
+    }
+  }
 
   build() {
     Stack() {
@@ -41,8 +52,7 @@ export struct MaskGuideView {
             .onReady(() => {
               this.context.globalAlpha = 0.6
               this.context.fillStyle = "#ff000000"
-              this.context.fillRect(0, 0, 360, 780)
-//              this.context.clearRect(this.selectAreaPositionX, this.selectAreaPositionY, this.selectAreaWidth, this.selectAreaHeight)//选中蒙版中想要提示的位置
+              this.context.fillRect(0, 0, this.screenWidth, this.screenHeight)
             })
             .touchable(this.touchable_MaskGuideView)
         }
@@ -76,6 +86,7 @@ export struct MaskGuideView {
                 y: this.selectAreaPositionY + this.selectAreaHeight + 20
               })
             Text("我知道啦")
+              .width(100)
               .fontSize(16)
               .fontColor("#ffd1d7d6")
               .fontWeight(FontWeight.Bold)

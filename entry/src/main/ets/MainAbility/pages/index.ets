@@ -183,20 +183,20 @@ struct Index {
 
         //蒙版引导视图组件测试
 
-        //        MaskGuideView({//使用蒙版
-        //          tipMessage: "第一步：点击此按钮，即可跳转到页面1中",//设置引导提示语
-        //          selectAreaPositionX: 30,//设置高亮区域的x坐标
-        //          selectAreaPositionY: 20,//设置高亮区域的y坐标
-        //          selectAreaWidth: 80,//设置高亮区域宽度
-        //          selectAreaHeight: 40,//设置高亮区域高度
-        //        })
-        //        Button("页面1")//演示蒙版使用
-        //          .width(80)
-        //          .height(40)
-        //          .position({
-        //            x: 30,
-        //            y: 20
-        //          })
+                MaskGuideView({//使用蒙版
+                  tipMessage: "第一步：点击此按钮，即可跳转到页面1中",//设置引导提示语
+                  selectAreaPositionX: 30,//设置高亮区域的x坐标
+                  selectAreaPositionY: 20,//设置高亮区域的y坐标
+                  selectAreaWidth: 80,//设置高亮区域宽度
+                  selectAreaHeight: 40,//设置高亮区域高度
+                })
+                Button("页面1")//演示蒙版使用
+                  .width(80)
+                  .height(40)
+                  .position({
+                    x: 30,
+                    y: 20
+                  })
 
         //测试成功
 
@@ -245,15 +245,15 @@ struct Index {
         //        })
         //测试成功
 
-
-
-        CardView({
-          attribute:{
-            name: "aaa",
-            icon: "CardView_test1.png",
-            CardImage: "CardView_test1.png"
-          }
-        })
+//
+//
+//        CardView({
+//          attribute:{
+//            name: "aaa",
+//            icon: "CardView_test1.png",
+//            CardImage: "CardView_test1.png"
+//          }
+//        })
 
 
       }
