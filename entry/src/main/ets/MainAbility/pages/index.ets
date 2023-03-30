@@ -14,9 +14,9 @@
  */
 
 //滑动验证测试组件导入
-import { SwipePuzzle } from '../common/components/ui/SwipeCaptcha/SwipePuzzle'
-import { SimpleSwipe } from '../common/components/ui/SwipeCaptcha/SimpleSwipe'
-import { RotatePuzzle } from '../common/components/ui/SwipeCaptcha/RotatePuzzle'
+import { SwipePuzzle } from '../common/components/ui/SwipeCaptcha/swipePuzzle'
+import { SimpleSwipe } from '../common/components/ui/SwipeCaptcha/simpleSwipe'
+import { RotatePuzzle } from '../common/components/ui/SwipeCaptcha/rotatePuzzle'
 import { ImageItem } from '../common/components/beans/ImageItem'
 
 //图片窗帘组件导入
@@ -84,9 +84,12 @@ struct Index {
 
         //滑动验证码测试
 //                Column() {
-//                  SimpleSwipe()
-//                  SwipePuzzle()
-//                  RotatePuzzle()
+//                    //滑动验证子组件
+//                    SimpleSwipe()
+//                    //滑动拼图验证子组件
+//                    SwipePuzzle()
+//                    //旋转拼图验证子组件
+//                    RotatePuzzle()
 //                }
 //                .onAppear(()=>{
 //                  this.ImgList = [
@@ -183,20 +186,20 @@ struct Index {
 
         //蒙版引导视图组件测试
 
-                MaskGuideView({//使用蒙版
-                  tipMessage: "第一步：点击此按钮，即可跳转到页面1中",//设置引导提示语
-                  selectAreaPositionX: 30,//设置高亮区域的x坐标
-                  selectAreaPositionY: 20,//设置高亮区域的y坐标
-                  selectAreaWidth: 80,//设置高亮区域宽度
-                  selectAreaHeight: 40,//设置高亮区域高度
-                })
-                Button("页面1")//演示蒙版使用
-                  .width(80)
-                  .height(40)
-                  .position({
-                    x: 30,
-                    y: 20
-                  })
+//                MaskGuideView({//使用蒙版
+//                  tipMessage: "第一步：点击此按钮，即可跳转到页面1中",//设置引导提示语
+//                  selectAreaPositionX: 30,//设置高亮区域的x坐标
+//                  selectAreaPositionY: 20,//设置高亮区域的y坐标
+//                  selectAreaWidth: 80,//设置高亮区域宽度
+//                  selectAreaHeight: 40,//设置高亮区域高度
+//                })
+//                Button("页面1")//演示蒙版使用
+//                  .width(80)
+//                  .height(40)
+//                  .position({
+//                    x: 30,
+//                    y: 20
+//                  })
 
         //测试成功
 
