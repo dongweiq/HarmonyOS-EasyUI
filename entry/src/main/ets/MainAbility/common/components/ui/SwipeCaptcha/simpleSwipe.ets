@@ -62,7 +62,7 @@ export struct SimpleSwipe{
               }
               .swipeBtn()
               .touchable(true)
-              //事件1：滑动开始，需按住滑块170ms以上才能触发该事件。【**这个设定会导致滑块滑动边界不好控制，目前没有解决思路**】
+              //事件1：滑动开始，需按住滑块170ms以上才能触发该事件。
               .onDragStart((event: DragEvent, extraParams: String) => {
                 this.simpleStartTime = Date.now();//获取的当前时间会转换成距离某个时间有多少毫秒，即返回number类型
                 //获取当前真实位置
