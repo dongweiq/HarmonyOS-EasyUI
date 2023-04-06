@@ -16,7 +16,7 @@ import { ImageItem } from "../beans/ImageItem"
 @Component
 export struct ImageCrop{
 
-  @StorageLink("Img") Img: ImageItem = new ImageItem("");
+  @State img: ImageItem = new ImageItem("");
 
   @State BoxVisibility: Visibility = Visibility.Hidden;
   @State FillVisibility: Visibility = Visibility.Visible;
@@ -60,7 +60,7 @@ export struct ImageCrop{
       Row(){
         Stack(){
           //原图片
-          Image($rawfile(this.Img.name))
+          Image($rawfile(this.img.name))
             .width(this.ImgW)
             .height(this.ImgH)
 
@@ -163,7 +163,7 @@ export struct ImageCrop{
 
 
           //裁剪后的图片
-          Image($rawfile(this.Img.name))
+          Image($rawfile(this.img.name))
             .width(this.ImgW)
             .height(this.ImgH)
             .onDragStart((event: DragEvent, extraParams: String) =>{

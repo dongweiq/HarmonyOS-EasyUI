@@ -62,7 +62,6 @@ struct Index {
 
   //图片源
   @StorageLink("ImgList") ImgList: ImageItem[] = [];
-  @StorageLink("Img") Img: ImageItem = new ImageItem("")
 
   //日历组件对话框
   dialogController: CustomDialogController = new CustomDialogController({
@@ -135,14 +134,13 @@ struct Index {
 
         //图片裁剪组件测试
 //                Column({space: 5}){
-//                  ImageCrop();//引入ImageCrop组件
+//                  ImageCrop({
+//                    img: new ImageItem("ImageCrop_dog.jpg")
+//                  });//引入ImageCrop组件
 //                }
 //                .width('100%')
 //                .height('100%')
 //                .borderRadius(10)
-//                .onAppear(() => {
-//                  this.Img = new ImageItem('ImageCrop_dog.jpg');
-//                })
         //测试成功
 
         //日历组件测试
