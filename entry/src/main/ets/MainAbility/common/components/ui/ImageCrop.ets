@@ -70,12 +70,6 @@ export struct ImageCrop{
               .width(this.ImgW)
               .height(this.ImgH)
               .opacity(0)
-              .clip(new Path({
-                commands: "M " + vp2px(this.CropX) + " " +vp2px(this.CropY) +
-                          " L " + vp2px(this.RealXBias) + " " + vp2px(this.CropX) +
-                          " L " + vp2px(this.RealXBias) + " " + vp2px(this.RealYBias) +
-                          " L " + vp2px(this.CropX) + " "+ vp2px(this.RealYBias) + " Z"
-              }))
           }
           .position({
             x: this.CropX,
@@ -188,7 +182,6 @@ export struct ImageCrop{
       }
       .height(this.ImgH)
       .onDragMove((event: DragEvent, extraParams: String) => {
-        console.log("asasasas")
         this.RealXBias = event.getX();
         this.RealYBias = event.getY() - 35;
 
