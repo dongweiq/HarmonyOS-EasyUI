@@ -12,10 +12,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {TextInput_icon} from "../common/components/TextInput"
-import {TextInput_label} from "../common/components/TextInput"
-import {TextInput_search} from "../common/components/TextInput"
-import {TextInput_disabled} from "../common/components/TextInput"
+import {TextInput_icon} from "easyui"
+import {TextInput_label} from "easyui"
+import {TextInput_search} from "easyui"
+import {TextInput_disabled} from "easyui"
 
 @Entry
 @Component

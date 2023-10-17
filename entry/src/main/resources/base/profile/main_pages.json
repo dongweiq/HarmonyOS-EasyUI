@@ -33,6 +33,16 @@
     "pages/TestImageZoom",
     "pages/TestLabelView",
     "pages/TestMaskGuideView",
-    "pages/TestSearchView"
+    "pages/TestSearchView",
+    "pages/TestSearch",
+    "pages/TestSwipeCell",
+    "pages/TestToast",
+    "pages/TestIcon",
+    "pages/TestUploader",
+    "pages/TestCustomSteps",
+    "pages/TestTag",
+    "pages/TestCircleProgress",
+    "pages/TestImagePreview",
+    "pages/TestAddressList"
   ]
 }

@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { GoodsAction_big, GoodsAction_mini } from "../common/components/GoodsAction"
+import { GoodsAction_big, GoodsAction_mini } from "easyui"
 
 @Entry
 @Component

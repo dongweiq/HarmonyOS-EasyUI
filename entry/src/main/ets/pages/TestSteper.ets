@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { steper } from '../common/components/Steper'
+import { steper } from 'easyui'
 @Entry
 @Component
 struct TestStepper {

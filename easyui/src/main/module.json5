@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "easyui",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

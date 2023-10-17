@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Tabbar_default } from '../common/components/Tabbar'
+import { Tabbar_default } from 'easyui'
 
 @Entry
 @Component

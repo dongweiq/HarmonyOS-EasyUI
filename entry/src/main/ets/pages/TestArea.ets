@@ -13,89 +13,85 @@
  * limitations under the License.
  */
 import promptAction from '@ohos.promptAction';
-import {Area_basic, Area_selectedPCD,Area_selectedPC,Area_placeholder} from "../common/components/Area"
+import {Area_basic, Area_selectedPCD,Area_selectedPC,Area_placeholder} from "easyui"
 @Entry
 @Component
 struct TestArea {
+  @State @Watch("showResult") result: string = ""
+  private scroller: Scroller = new Scroller()
+  @State selectedProvince: string = "河北省"
+  @State selectedCity: string = "唐山市"
+  @State selectedDistrict: string = "路北区"
 
-  @State@Watch("showResult") result:string = ""
-  private scroller:Scroller = new Scroller()
-
-  @State selectedProvince:string ="河北省"
-  @State selectedCity:string = "唐山市"
-  @State selectedDistrict:string = "路北区"
-
-  showResult(){
+  showResult() {
     promptAction.showToast({
-      message:"选中值："+this.result,
-      duration:2000,
-      bottom:300
+      message: "选中值：" + this.result,
+      duration: 2000,
+      bottom: 300
     })
   }
 
-
   build() {
-      Scroll(this.scroller) {
-        Column() {
+    Scroll(this.scroller) {
+      Column() {
 
-          Text("基础用法")
-            .margin({top:10})
-          Area_basic({
-            result: $result
+        Text("基础用法")
+          .margin({ top: 10 })
+        Area_basic({
+          result: $result
+        })
+          .margin({ left: 10, right: 10, top: 10 })
+          .shadow({
+            color: "#ff989898",
+            radius: 10
+          , offsetX: 0,
+            offsetY: 0
           })
-            .margin({left:10,right:10,top:10})
-            .shadow({
-              color:"#ff989898",
-              radius:10
-            ,offsetX:0,
-              offsetY:0
-            })
-          Text("选中省市区")
-            .margin({top:10})
-          Area_selectedPCD({
-            result: $result,
-            selectedProvince: $selectedProvince,
-            selectedCity: $selectedCity,
-            selectedDistrict: $selectedDistrict
+        Text("选中省市区")
+          .margin({ top: 10 })
+        Area_selectedPCD({
+          result: $result,
+          selectedProvince: $selectedProvince,
+          selectedCity: $selectedCity,
+          selectedDistrict: $selectedDistrict
+        })
+          .margin({ left: 10, right: 10, top: 10 })
+          .shadow({
+            color: "#ff989898",
+            radius: 10
+          , offsetX: 0,
+            offsetY: 0
           })
-            .margin({left:10,right:10,top:10})
-            .shadow({
-              color:"#ff989898",
-              radius:10
-            ,offsetX:0,
-              offsetY:0
-            })
 
-          Text("配置显示列")
-            .margin({top:10})
-          Area_selectedPC({
-            result: $result,
-            title:"标题1"
+        Text("配置显示列")
+          .margin({ top: 10 })
+        Area_selectedPC({
+          result: $result,
+          title: "标题1"
+        })
+          .margin({ left: 10, right: 10, top: 10 })
+          .shadow({
+            color: "#ff989898",
+            radius: 10
+          , offsetX: 0,
+            offsetY: 0
           })
-            .margin({left:10,right:10,top:10})
-            .shadow({
-              color:"#ff989898",
-              radius:10
-            ,offsetX:0,
-              offsetY:0
-            })
 
-          Text("显示占位文字")
-            .margin({top:10})
-          Area_placeholder({
-            result: $result,
-            title:"标题2"
+        Text("显示占位文字")
+          .margin({ top: 10 })
+        Area_placeholder({
+          result: $result,
+          title: "标题2"
+        })
+          .margin({ left: 10, right: 10, top: 10 })
+          .shadow({
+            color: "#ff989898",
+            radius: 10
+          , offsetX: 0,
+            offsetY: 0
           })
-            .margin({left:10,right:10,top:10})
-            .shadow({
-              color:"#ff989898",
-              radius:10
-            ,offsetX:0,
-              offsetY:0
-            })
-        }
-        .margin({bottom:10})
       }
+      .margin({ bottom: 10 })
+    }
   }
-
 }

@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Popup_bottom, Popup_default, Popup_right, Popup_top} from '../common/components/Popup'
+import { Popup_bottom, Popup_default, Popup_right, Popup_top} from 'easyui'
 @Entry
 @Component
 struct TestTabbar{

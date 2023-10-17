@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { NumberKeyboard_custom, NumberKeyboard_default } from '../common/components/NumberKeyboard'
+import { NumberKeyboard_custom, NumberKeyboard_default } from 'easyui'
 import promptAction from '@ohos.promptAction'
 @Entry
 @Component

@@ -12,10 +12,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Alert_emotion, Alert_emotion_icon_block } from "../common/components/Alert"
-import { Alert_emotion_icon } from "../common/components/Alert"
-import { Alert_emotion_icon_inverse } from "../common/components/Alert"
-import { Alert_close } from "../common/components/Alert"
+import { Alert_emotion, Alert_emotion_icon_block } from "easyui"
+import { Alert_emotion_icon } from "easyui"
+import { Alert_emotion_icon_inverse } from "easyui"
+import { Alert_close } from "easyui"
 
 @Entry
 @Component

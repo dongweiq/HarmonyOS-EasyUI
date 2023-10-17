@@ -12,14 +12,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { ImageCurtain } from '../common/components/ImageCurtain'
+import { ImageCurtain } from 'easyui'
 @Entry
 @Component
 struct TestImageCurtain {
   build() {
       Column() {
         ImageCurtain({ //修改图片测试
-          imgName: "imageCurtain_test1.jpg",
+          imgName: "ImageCurtain_test1.jpg",
           ImgHeight:740,  //窗帘图片高度
           ImgWidth:460,   //窗帘图片宽度
           ImgStartXBias:0, //窗帘图片起始位置x坐标

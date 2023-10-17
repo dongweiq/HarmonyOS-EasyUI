@@ -12,8 +12,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { ImageItem } from '../common/components/beans/ImageItem';
-import { ImageCrop } from "../common/components/ImageCrop"
+import { ImageItem } from 'easyui';
+import { ImageCrop } from "easyui"
 @Entry
 @Component
 struct TestImageCrop {

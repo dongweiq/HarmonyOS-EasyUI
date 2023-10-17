@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {Collapse,Collapse_group,Collapse_panel} from "../common/components/Collapse"
+import {Collapse,Collapse_group,Collapse_panel} from "easyui"
 
 @Entry
 @Component

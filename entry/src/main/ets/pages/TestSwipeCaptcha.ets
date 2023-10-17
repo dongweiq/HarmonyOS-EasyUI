@@ -12,10 +12,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { SwipePuzzle } from '../common/components/SwipeCaptcha/SwipePuzzle'
-import { SimpleSwipe } from '../common/components/SwipeCaptcha/SimpleSwipe'
-import { RotatePuzzle } from '../common/components/SwipeCaptcha/RotatePuzzle'
-import { ImageItem } from '../common/components/beans/ImageItem'
+import { SwipePuzzle } from 'easyui'
+import { SimpleSwipe } from 'easyui'
+import { RotatePuzzle } from 'easyui'
+import { ImageItem } from 'easyui'
 @Entry
 @Component
 struct TestSwipeCaptcha {

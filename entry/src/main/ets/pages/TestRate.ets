@@ -12,13 +12,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Rate_default } from "../common/components/Rate"
-import { Rate_icon } from "../common/components/Rate"
-import { Rate_style } from "../common/components/Rate"
-import { Rate_halfStar } from "../common/components/Rate"
-import { Rate_number } from "../common/components/Rate"
-import { Rate_disabled } from "../common/components/Rate"
-import { Rate_readOnly } from "../common/components/Rate"
+import { Rate_default } from "easyui"
+import { Rate_icon } from "easyui"
+import { Rate_style } from "easyui"
+import { Rate_halfStar } from "easyui"
+import { Rate_number } from "easyui"
+import { Rate_disabled } from "easyui"
+import { Rate_readOnly } from "easyui"
 
 @Entry
 @Component
@@ -28,7 +28,7 @@ struct TestRate{
       Column(){
         Column({space: 5}){
           Text("Rate基础用法")
-            .fontSize(15)
+            .fontSize(25)
             .width("100%")
             .height(30)
             .margin({left: 10})
@@ -41,46 +41,46 @@ struct TestRate{
 
         Column({space: 5}){
           Text("Rate自定义图标")
-            .fontSize(15)
+            .fontSize(25)
             .width("100%")
             .height(30)
             .margin({left: 10})
             .align(Alignment.Start)
           Column(){
-            Rate_icon({iconURL_yes: "Rate_heart_yellow.png", iconURL_no: "Rate_heart_white.png"});
+            Rate_icon();
           }
           .width("100%")
         }
 
         Column({space: 5}){
           Text("Rate自定义样式")
-            .fontSize(15)
+            .fontSize(25)
             .width("100%")
             .height(30)
             .margin({left: 10})
             .align(Alignment.Start)
           Column(){
-            Rate_style({icon_size: 50, iconURL_yes: "Rate_star_red.png", iconURL_no: "Rate_star_grey.png"});
+            Rate_style();
           }
           .width("100%")
         }
 
         Column({space: 5}){
           Text("Rate半星")
-            .fontSize(15)
+            .fontSize(25)
             .width("100%")
             .height(30)
             .margin({left: 10})
             .align(Alignment.Start)
           Column(){
-            Rate_halfStar({icon_size: 40, cur_score:4.5});
+            Rate_halfStar();
           }
           .width("100%")
         }
 
         Column({space: 5}){
           Text("Rate自定义数量")
-            .fontSize(15)
+            .fontSize(25)
             .width("100%")
             .height(30)
             .margin({left: 10})
@@ -93,7 +93,7 @@ struct TestRate{
 
         Column({space: 5}){
           Text("Rate禁用状态")
-            .fontSize(15)
+            .fontSize(25)
             .width("100%")
             .height(30)
             .margin({left: 10})
@@ -105,8 +105,8 @@ struct TestRate{
         }
 
         Column({space: 5}){
-          Text("Rate禁用状态")
-            .fontSize(15)
+          Text("Rate只读状态")
+            .fontSize(25)
             .width("100%")
             .height(30)
             .margin({left: 10})

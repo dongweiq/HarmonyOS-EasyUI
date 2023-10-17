@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {  CustomCalendar } from "../common/components/CustomCalendar"
+import {  CustomCalendar } from "easyui"
 @Entry
 @Component
 struct TestCustomCalendar {

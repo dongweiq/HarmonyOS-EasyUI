@@ -12,13 +12,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Cell, Cell_group } from '../common/components/Cell'
+import { Cell, Cell_group } from 'easyui'
 import router from '@ohos.router'
 @Entry
 @Component
 struct TestCell {
-
-
 
   build() {
     Scroll() {

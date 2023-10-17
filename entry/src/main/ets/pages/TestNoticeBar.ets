@@ -12,10 +12,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { NoticeBar_default } from "../common/components/NoticeBar"
-import { NoticeBar_bar } from "../common/components/NoticeBar"
-import { NoticeBar_disabled } from "../common/components/NoticeBar"
-import { NoticeBar_nextLine } from "../common/components/NoticeBar"
+import { NoticeBar_default } from "easyui"
+import { NoticeBar_bar } from "easyui"
+import { NoticeBar_disabled } from "easyui"
+import { NoticeBar_nextLine } from "easyui"
 
 @Entry
 @Component

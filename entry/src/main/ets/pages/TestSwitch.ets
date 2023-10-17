@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {Switch,Switch_textLeft,Switch_textRight,Switch_inline,Switch_disable_on,Switch_disable_off} from "../common/components/Switch"
+import {Switch,Switch_textLeft,Switch_textRight,Switch_inline,Switch_disable_on,Switch_disable_off} from "easyui"
 
 @Entry
 @Component

@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { LabelView } from '../common/components/LabelView'
+import { LabelView } from 'easyui'
 import prompt from '@ohos.prompt'
 @Entry
 @Component

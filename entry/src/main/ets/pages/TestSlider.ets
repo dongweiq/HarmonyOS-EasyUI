@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Slider_basic,Slider_range,Slider_disable ,Slider_button} from '../common/components/Slider'
+import { Slider_basic,Slider_range,Slider_disable ,Slider_button} from 'easyui'
 import promptAction from '@ohos.promptAction';
 @Entry
 @Component

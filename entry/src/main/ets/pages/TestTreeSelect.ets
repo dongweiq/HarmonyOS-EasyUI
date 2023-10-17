@@ -12,9 +12,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { TreeSelect } from '../common/components/TreeSelect'
+import { TreeSelect } from 'easyui'
 import promptAction from '@ohos.promptAction'
-import { areaInfo } from '../common/data/Data'
 
 @Entry
 @Component

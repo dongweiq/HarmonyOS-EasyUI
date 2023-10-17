@@ -12,8 +12,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { ImageItem } from '../common/components/beans/ImageItem';
-import { ImageZoom } from '../common/components/ImageZoom';
+import { ImageItem } from 'easyui';
+import { ImageZoom } from 'easyui';
 @Entry
 @Component
 struct TestImageZoom {
