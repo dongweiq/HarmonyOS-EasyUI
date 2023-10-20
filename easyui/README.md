@@ -4,7 +4,7 @@
 ***
 easyui是一套基于ArkTS语言开发的轻量、可靠的移动端组件库，它是对OpenHarmony ArkUI进行深度定制的组件框架。 
 ohos_easyUI可扩展性较强，可以基于源码进行二次开发，修改原有组件以及新增部分组件，以满足具体项目的开发需求。
-该框架适用大部分 OpenHarmony 应用的开发 ，能够更加完善OpenHarmony 的应用开发能力，使我们的应用开发更简单。
+该框架适用大部分 OpenHarmony 应用的开发 ，能够更加完善OpenHarmony 的应用开发能力，使应用开发更简单。
 
 ## 下载安裝
 ***
@@ -133,7 +133,7 @@ struct TestAddressList {
 ```
 ## 贡献代码
 
-使用过程中发现任何问题都可以提 Issue 给我们，当然，我们也非常欢迎你给我们发 PR 。
+使用过程中发现任何问题都可以提 Issue，当然，非常欢迎给发PR 。
 
 ## License
 *** 

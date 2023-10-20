@@ -1,10 +1,10 @@
-/**
- * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
- * Licensed under the Apache License, Version 2.0 (the "License");
+/*
+ * Copyright (c) 2021 Institute of Software, Chinese Academy of Sciences.
+ * Licensed under the Apache License,Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,6 +12,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+
 import {Label_topic_default,Label_topic_primary,Label_topic_success,Label_topic_info,Label_topic_warning,Label_topic_danger,
   Label_badge_default,Label_badge_primary,Label_badge_success,Label_badge_info,Label_badge_warning,Label_badge_danger,
   Label_dot_default,Label_dot_primary,Label_dot_success,Label_dot_info,Label_dot_warning,Label_dot_danger,

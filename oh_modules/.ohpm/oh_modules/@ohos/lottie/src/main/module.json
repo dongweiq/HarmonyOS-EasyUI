@@ -1,0 +1,20 @@
+{
+	"app": {
+		"bundleName": "com.openharmony.lottie",
+		"debug": true,
+		"versionCode": 1000000,
+		"versionName": "2.0.4",
+		"minAPIVersion": 9,
+		"targetAPIVersion": 9,
+		"apiReleaseType": "Release"
+	},
+	"module": {
+		"name": "lottieArkTS",
+		"type": "har",
+		"deviceTypes": [
+			"default",
+			"tablet"
+		],
+		"uiSyntax": "ets"
+	}
+}
