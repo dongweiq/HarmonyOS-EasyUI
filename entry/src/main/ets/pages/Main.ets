@@ -1,10 +1,10 @@
-/**
- * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
- * Licensed under the Apache License, Version 2.0 (the "License");
+/*
+ * Copyright (c) 2021 Institute of Software, Chinese Academy of Sciences.
+ * Licensed under the Apache License,Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,7 +12,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Cell } from '../common/components/Cell'
+
+
+
+import { Cell } from 'easyui'
 @Entry
 @Component
 struct Main {
@@ -43,7 +46,7 @@ struct Main {
                 Cell({
                   leftTitle: "Button 按钮",
                   rightArrow: ">",
-                  url: "pages/TestButton"
+                  url: "pages/TestButton" //
                 })
                   .margin({ top: 10 })
                 Cell({
@@ -51,7 +54,6 @@ struct Main {
                   rightArrow: ">",
                   url: "pages/TestPopup"
                 })
-
                 Cell({
                   leftTitle: "Cell 单元格",
                   rightArrow: ">",
@@ -61,6 +63,11 @@ struct Main {
                   leftTitle: "Radio 单选框",
                   rightArrow: ">",
                   url: "pages/TestRadio"
+                })
+                Cell({
+                  leftTitle: "Icon 图标",
+                  rightArrow: ">",
+                  url: "pages/TestIcon"
                 })
               }
               .height(this.basicCompHeight)
@@ -75,7 +82,7 @@ struct Main {
             .width("100%")
             .onClick(() => {
               if (this.basicCompHeight == 0) {
-                this.basicCompHeight = 160
+                this.basicCompHeight = 200
               } else {
                 this.basicCompHeight = 0
               }
@@ -124,9 +131,20 @@ struct Main {
                 })
 
                 Cell({
+                  leftTitle: "Search 搜索",
+                  rightArrow: ">",
+                  url: "pages/TestSearch"
+                })
+
+                Cell({
                   leftTitle: "Stepper 步进器",
                   rightArrow: ">",
                   url: "pages/TestSteper"
+                })
+                Cell({
+                  leftTitle: "Uploader 图片上传",
+                  rightArrow: ">",
+                  url: "pages/TestUploader"
                 })
               }
               .height(this.formCompHeight)
@@ -141,7 +159,7 @@ struct Main {
             .width("100%")
             .onClick(() => {
               if (this.formCompHeight == 0) {
-                this.formCompHeight = 320
+                this.formCompHeight = 360
               } else {
                 this.formCompHeight = 0
               }
@@ -166,6 +184,19 @@ struct Main {
                   rightArrow: ">",
                   url: "pages/TestCollapse"
                 })
+
+                Cell({
+                  leftTitle: "SwipeCell 滑动单元格",
+                  rightArrow: ">",
+                  url: "pages/TestSwipeCell"
+                })
+
+                Cell({
+                  leftTitle: "Toast 轻提示",
+                  rightArrow: ">",
+                  url: "pages/TestToast"
+                })
+
               }
               .height(this.feedBackCompHeight)
               .animation({
@@ -259,6 +290,21 @@ struct Main {
                   rightArrow: ">",
                   url: "pages/TestSearchView"
                 })
+                Cell({
+                  leftTitle: "CustomStep 步骤条",
+                  rightArrow: ">",
+                  url: "pages/TestCustomSteps"
+                })
+                Cell({
+                  leftTitle: "Tag 标签",
+                  rightArrow: ">",
+                  url: "pages/TestTag"
+                })
+                Cell({
+                  leftTitle: "CircleProgress 环形进度条",
+                  rightArrow: ">",
+                  url: "pages/TestCircleProgress"
+                })
               }
               .height(this.showCompHeight)
               .animation({
@@ -272,7 +318,7 @@ struct Main {
             .width("100%")
             .onClick(() => {
               if (this.showCompHeight == 0) {
-                this.showCompHeight = 520
+                this.showCompHeight = 620
               } else {
                 this.showCompHeight = 0
               }
@@ -350,6 +396,11 @@ struct Main {
                   rightArrow: ">",
                   url: "pages/TestGoodAction"
                 })
+                Cell({
+                  leftTitle: "AddressList 地址列表",
+                  rightArrow: ">",
+                  url: "pages/TestAddressList"
+                })
 
               }
               .height(this.busCompHeight)
@@ -364,7 +415,7 @@ struct Main {
             .width("100%")
             .onClick(() => {
               if (this.busCompHeight == 0) {
-                this.busCompHeight = 120
+                this.busCompHeight = 160
               } else {
                 this.busCompHeight = 0
               }

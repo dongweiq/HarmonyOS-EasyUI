@@ -21,6 +21,10 @@
           ]
         }
       ]
+    },
+    {
+      "name": "easyui",
+      "srcPath": "./easyui"
     }
   ]
 }

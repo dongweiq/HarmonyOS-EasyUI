@@ -1,10 +1,10 @@
-/**
- * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
- * Licensed under the Apache License, Version 2.0 (the "License");
+/*
+ * Copyright (c) 2021 Institute of Software, Chinese Academy of Sciences.
+ * Licensed under the Apache License,Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,14 +12,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { ImageCurtain } from '../common/components/ImageCurtain'
+
+
+import { ImageCurtain } from 'easyui'
 @Entry
 @Component
 struct TestImageCurtain {
   build() {
       Column() {
         ImageCurtain({ //修改图片测试
-          imgName: "imageCurtain_test1.jpg",
+          imgName: "ImageCurtain_test1.jpg",
           ImgHeight:740,  //窗帘图片高度
           ImgWidth:460,   //窗帘图片宽度
           ImgStartXBias:0, //窗帘图片起始位置x坐标

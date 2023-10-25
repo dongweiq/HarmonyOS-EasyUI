@@ -1,10 +1,10 @@
-/**
- * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
- * Licensed under the Apache License, Version 2.0 (the "License");
+/*
+ * Copyright (c) 2021 Institute of Software, Chinese Academy of Sciences.
+ * Licensed under the Apache License,Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,10 +12,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { SwipePuzzle } from '../common/components/SwipeCaptcha/SwipePuzzle'
-import { SimpleSwipe } from '../common/components/SwipeCaptcha/SimpleSwipe'
-import { RotatePuzzle } from '../common/components/SwipeCaptcha/RotatePuzzle'
-import { ImageItem } from '../common/components/beans/ImageItem'
+
+
+import { SwipePuzzle } from 'easyui'
+import { SimpleSwipe } from 'easyui'
+import { RotatePuzzle } from 'easyui'
+import { ImageItem } from 'easyui'
 @Entry
 @Component
 struct TestSwipeCaptcha {

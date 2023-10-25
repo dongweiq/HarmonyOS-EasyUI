@@ -1,10 +1,10 @@
-/**
- * Copyright 2022 Institute of Software Chinese Academy of Sciences, ISRC
- * Licensed under the Apache License, Version 2.0 (the "License");
+/*
+ * Copyright (c) 2021 Institute of Software, Chinese Academy of Sciences.
+ * Licensed under the Apache License,Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,13 +12,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+
 import {Button_type_main,Button_type_normal,Button_type_link,
   Button_type_group,Button_size_big_blue,Button_size_big_grey,Button_size_small_blue,
   Button_size_small_grey,Button_size_tiny_blue, Button_size_tiny_grey,
   Button_size_block_blue,Button_size_block_grey,Button_state_withIcon,Button_state_stateSwitching,
   Button_state_multSelect,Button_state_singleSelect,Button_state_loading,Button_state_disable_blue,
   Button_state_disable_grey,Button_color_default,Button_color_main,Button_color_info,
-  Button_color_success,Button_color_danger,Button_color_warn } from "../common/components/Button"
+  Button_color_success,Button_color_danger,Button_color_warn } from "easyui"
 
 
 @Entry

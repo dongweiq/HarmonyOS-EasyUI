@@ -1,0 +1,14 @@
+{
+  "name": "@isrc/easyui",
+  "version": "1.0.0",
+  "description": "easyui是一套基于ArkTS语言开发的轻量、可靠的移动端组件库，它是对OpenHarmony ArkUI进行深度定制的组件框架。",
+  "main": "index.ets",
+  "keywords": ["easyui"],
+  "author": "isrc",
+  "repository": "https://gitee.com/zw0601/ohos_easyUI",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@ohos/lottie": "^2.0.1"
+  },
+  "devDependencies": { }
+}
