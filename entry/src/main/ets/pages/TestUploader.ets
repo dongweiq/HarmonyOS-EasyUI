@@ -14,7 +14,7 @@
  */
 
 
-import { Uploader } from 'easyui'
+import { Uploader } from '@isrc/easyui'
 @Entry
 @Component
 struct TestUploader {

@@ -14,7 +14,7 @@
  */
 
 
-import {  CustomCalendar } from "easyui"
+import {  CustomCalendar } from "@isrc/easyui"
 @Entry
 @Component
 struct TestCustomCalendar {

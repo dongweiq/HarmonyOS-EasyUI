@@ -14,10 +14,10 @@
  */
 
 
-import { SwipePuzzle } from 'easyui'
-import { SimpleSwipe } from 'easyui'
-import { RotatePuzzle } from 'easyui'
-import { ImageItem } from 'easyui'
+import { SwipePuzzle } from '@isrc/easyui'
+import { SimpleSwipe } from '@isrc/easyui'
+import { RotatePuzzle } from '@isrc/easyui'
+import { ImageItem } from '@isrc/easyui'
 @Entry
 @Component
 struct TestSwipeCaptcha {

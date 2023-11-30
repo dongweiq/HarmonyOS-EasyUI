@@ -14,7 +14,7 @@
  */
 
 
-import { Popup_bottom, Popup_default, Popup_right, Popup_top} from 'easyui'
+import { Popup_bottom, Popup_default, Popup_right, Popup_top} from '@isrc/easyui'
 @Entry
 @Component
 struct TestTabbar{

@@ -14,7 +14,7 @@
  */
 
 
-import { SearchView } from 'easyui';
+import { SearchView } from '@isrc/easyui';
 @Entry
 @Component
 struct TestSearchView {

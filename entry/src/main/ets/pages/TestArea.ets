@@ -15,7 +15,7 @@
 
 
 import promptAction from '@ohos.promptAction';
-import {Area_basic, Area_selectedPCD,Area_selectedPC,Area_placeholder} from "easyui"
+import {Area_basic, Area_selectedPCD,Area_selectedPC,Area_placeholder} from "@isrc/easyui"
 @Entry
 @Component
 struct TestArea {

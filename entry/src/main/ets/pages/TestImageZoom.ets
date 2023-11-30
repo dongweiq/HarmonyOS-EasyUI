@@ -14,8 +14,8 @@
  */
 
 
-import { ImageItem } from 'easyui';
-import { ImageZoom } from 'easyui';
+import { ImageItem } from '@isrc/easyui';
+import { ImageZoom } from '@isrc/easyui';
 @Entry
 @Component
 struct TestImageZoom {

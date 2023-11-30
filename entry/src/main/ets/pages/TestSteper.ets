@@ -14,7 +14,7 @@
  */
 
 
-import { steper } from 'easyui'
+import { steper } from '@isrc/easyui'
 @Entry
 @Component
 struct TestStepper {

@@ -14,7 +14,7 @@
  */
 
 
-import { Tag, TagSize, TagType } from 'easyui'
+import { Tag, TagSize, TagType } from '@isrc/easyui'
 @Entry
 @Component
 struct TestTag {

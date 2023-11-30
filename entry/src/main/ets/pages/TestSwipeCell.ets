@@ -14,7 +14,7 @@
  */
 
 
-import { SwipeCell_async, SwipeCell_default } from 'easyui'
+import { SwipeCell_async, SwipeCell_default } from '@isrc/easyui'
 @Entry
 @Component
 struct TextSearch{

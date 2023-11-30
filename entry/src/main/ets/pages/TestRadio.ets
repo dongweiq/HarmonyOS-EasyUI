@@ -14,11 +14,11 @@
  */
 
 
-import { Radio_default } from 'easyui';
-import { Radio_disabled } from 'easyui';
-import { Radio_color } from 'easyui';
-import { Radio_icon } from 'easyui';
-import { Radio_cell } from 'easyui';
+import { Radio_default } from '@isrc/easyui';
+import { Radio_disabled } from '@isrc/easyui';
+import { Radio_color } from '@isrc/easyui';
+import { Radio_icon } from '@isrc/easyui';
+import { Radio_cell } from '@isrc/easyui';
 
 @Entry
 @Component

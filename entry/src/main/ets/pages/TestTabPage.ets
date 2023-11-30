@@ -14,7 +14,7 @@
  */
 
 
-import { TabPage } from 'easyui'
+import { TabPage } from '@isrc/easyui'
 import promptAction from '@ohos.promptAction';
 @Entry
 @Component

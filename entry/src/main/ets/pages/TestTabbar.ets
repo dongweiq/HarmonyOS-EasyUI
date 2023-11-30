@@ -14,7 +14,7 @@
  */
 
 
-import { Tabbar_default } from 'easyui'
+import { Tabbar_default } from '@isrc/easyui'
 
 @Entry
 @Component

@@ -14,7 +14,7 @@
  */
 
 
-import { ContactCard, ContactEdit, ContactList } from 'easyui'
+import { ContactCard, ContactEdit, ContactList } from '@isrc/easyui'
 @Entry
 @Component
 struct TestContact {
