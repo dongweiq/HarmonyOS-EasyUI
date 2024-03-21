@@ -14,7 +14,7 @@
  */
 
 
-import { ImageSwiper } from 'easyui'
+import { ImageSwiper } from '@isrc/easyui'
 @Entry
 @Component
 struct TestImageSwiper{

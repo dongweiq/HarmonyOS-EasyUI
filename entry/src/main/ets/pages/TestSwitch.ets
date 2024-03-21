@@ -14,7 +14,7 @@
  */
 
 
-import {Switch,Switch_textLeft,Switch_textRight,Switch_inline,Switch_disable_on,Switch_disable_off} from "easyui"
+import {Switch,Switch_textLeft,Switch_textRight,Switch_inline,Switch_disable_on,Switch_disable_off} from "@isrc/easyui"
 
 @Entry
 @Component

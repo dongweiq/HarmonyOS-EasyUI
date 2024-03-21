@@ -14,7 +14,7 @@
  */
 
 
-import { ImagePreview } from 'easyui'
+import { ImagePreview } from '@isrc/easyui'
 @Entry
 @Component
 struct TestImagePreview {

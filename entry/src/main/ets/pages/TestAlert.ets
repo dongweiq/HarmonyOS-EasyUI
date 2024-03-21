@@ -14,10 +14,10 @@
  */
 
 
-import { Alert_emotion, Alert_emotion_icon_block } from "easyui"
-import { Alert_emotion_icon } from "easyui"
-import { Alert_emotion_icon_inverse } from "easyui"
-import { Alert_close } from "easyui"
+import { Alert_emotion, Alert_emotion_icon_block } from "@isrc/easyui"
+import { Alert_emotion_icon } from "@isrc/easyui"
+import { Alert_emotion_icon_inverse } from "@isrc/easyui"
+import { Alert_close } from "@isrc/easyui"
 
 @Entry
 @Component

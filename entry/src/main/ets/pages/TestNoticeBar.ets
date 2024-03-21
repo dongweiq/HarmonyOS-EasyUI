@@ -14,10 +14,10 @@
  */
 
 
-import { NoticeBar_default } from "easyui"
-import { NoticeBar_bar } from "easyui"
-import { NoticeBar_disabled } from "easyui"
-import { NoticeBar_nextLine } from "easyui"
+import { NoticeBar_default } from "@isrc/easyui"
+import { NoticeBar_bar } from "@isrc/easyui"
+import { NoticeBar_disabled } from "@isrc/easyui"
+import { NoticeBar_nextLine } from "@isrc/easyui"
 
 @Entry
 @Component

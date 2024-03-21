@@ -14,7 +14,7 @@
  */
 
 
-import { CountDown } from 'easyui';
+import { CountDown } from '@isrc/easyui';
 @Entry
 @Component
 struct TestCountDown{

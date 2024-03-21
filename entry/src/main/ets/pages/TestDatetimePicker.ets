@@ -14,7 +14,7 @@
  */
 
 
-import { DatetimePicker_date } from "easyui"
+import { DatetimePicker_date } from "@isrc/easyui"
 
 @Entry
 @Component

@@ -14,7 +14,7 @@
  */
 
 
-import {Icon} from "easyui"
+import {Icon} from "@isrc/easyui"
 @Entry
 @Component
 struct TestIcon {

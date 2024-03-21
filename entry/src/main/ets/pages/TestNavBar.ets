@@ -14,7 +14,7 @@
  */
 
 
-import { NavBar } from 'easyui'
+import { NavBar } from '@isrc/easyui'
 import promptAction from '@ohos.promptAction'
 @Entry
 @Component

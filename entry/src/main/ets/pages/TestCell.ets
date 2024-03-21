@@ -14,7 +14,7 @@
  */
 
 
-import { Cell, Cell_group } from 'easyui'
+import { Cell, Cell_group } from '@isrc/easyui'
 import router from '@ohos.router'
 @Entry
 @Component

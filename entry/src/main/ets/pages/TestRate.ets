@@ -14,13 +14,13 @@
  */
 
 
-import { Rate_default } from "easyui"
-import { Rate_icon } from "easyui"
-import { Rate_style } from "easyui"
-import { Rate_halfStar } from "easyui"
-import { Rate_number } from "easyui"
-import { Rate_disabled } from "easyui"
-import { Rate_readOnly } from "easyui"
+import { Rate_default } from "@isrc/easyui"
+import { Rate_icon } from "@isrc/easyui"
+import { Rate_style } from "@isrc/easyui"
+import { Rate_halfStar } from "@isrc/easyui"
+import { Rate_number } from "@isrc/easyui"
+import { Rate_disabled } from "@isrc/easyui"
+import { Rate_readOnly } from "@isrc/easyui"
 
 @Entry
 @Component

@@ -14,7 +14,7 @@
  */
 
 
-import { TreeSelect } from 'easyui'
+import { TreeSelect } from '@isrc/easyui'
 import promptAction from '@ohos.promptAction'
 
 @Entry

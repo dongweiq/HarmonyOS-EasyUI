@@ -1,9 +1,10 @@
 {
   "app": {
-    "compileSdkVersion": 9,
-    "compatibleSdkVersion": 9,
+
     "products": [
       {
+        "compileSdkVersion": 10,
+        "compatibleSdkVersion": 9,
         "name": "default",
         "signingConfig": "default"
       }

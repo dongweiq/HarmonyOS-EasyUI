@@ -14,7 +14,7 @@
  */
 
 
-import { Slider_basic,Slider_range,Slider_disable ,Slider_button} from 'easyui'
+import { Slider_basic,Slider_range,Slider_disable ,Slider_button} from '@isrc/easyui'
 import promptAction from '@ohos.promptAction';
 @Entry
 @Component

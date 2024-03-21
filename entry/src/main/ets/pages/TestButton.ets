@@ -20,7 +20,7 @@ import {Button_type_main,Button_type_normal,Button_type_link,
   Button_size_block_blue,Button_size_block_grey,Button_state_withIcon,Button_state_stateSwitching,
   Button_state_multSelect,Button_state_singleSelect,Button_state_loading,Button_state_disable_blue,
   Button_state_disable_grey,Button_color_default,Button_color_main,Button_color_info,
-  Button_color_success,Button_color_danger,Button_color_warn } from "easyui"
+  Button_color_success,Button_color_danger,Button_color_warn } from "@isrc/easyui"
 
 
 @Entry

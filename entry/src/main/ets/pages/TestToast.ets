@@ -14,7 +14,7 @@
  */
 
 
-import { Toast_advance, Toast_default, Toast_loading, Toast_successOrFailed } from 'easyui';
+import { Toast_advance, Toast_default, Toast_loading, Toast_successOrFailed } from '@isrc/easyui';
 
 @Entry
 @Component
