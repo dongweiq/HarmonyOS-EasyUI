@@ -14,7 +14,7 @@
  */
 
 
-import { GoodsAction_big, GoodsAction_mini } from "easyui"
+import { GoodsAction_big, GoodsAction_mini } from "@isrc/easyui"
 
 @Entry
 @Component

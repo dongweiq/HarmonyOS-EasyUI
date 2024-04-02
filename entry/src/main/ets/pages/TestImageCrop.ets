@@ -14,8 +14,8 @@
  */
 
 
-import { ImageItem } from 'easyui';
-import { ImageCrop } from "easyui"
+import { ImageItem } from '@isrc/easyui';
+import { ImageCrop } from "@isrc/easyui"
 @Entry
 @Component
 struct TestImageCrop {

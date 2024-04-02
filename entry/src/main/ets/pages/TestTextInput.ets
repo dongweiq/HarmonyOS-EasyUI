@@ -14,10 +14,10 @@
  */
 
 
-import {TextInput_icon} from "easyui"
-import {TextInput_label} from "easyui"
-import {TextInput_search} from "easyui"
-import {TextInput_disabled} from "easyui"
+import {TextInput_icon} from "@isrc/easyui"
+import {TextInput_label} from "@isrc/easyui"
+import {TextInput_search} from "@isrc/easyui"
+import {TextInput_disabled} from "@isrc/easyui"
 
 @Entry
 @Component

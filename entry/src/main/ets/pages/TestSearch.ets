@@ -14,7 +14,7 @@
  */
 
 
-import { search_advance, search_default, search_listen } from 'easyui'
+import { search_advance, search_default, search_listen } from '@isrc/easyui'
 
 @Entry
 @Component

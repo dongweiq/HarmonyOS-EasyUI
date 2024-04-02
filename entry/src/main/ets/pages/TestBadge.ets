@@ -14,7 +14,7 @@
  */
 
 
-import { BadgeGroup } from 'easyui'
+import { BadgeGroup } from '@isrc/easyui'
 @Entry
 @Component
 struct TestBadge {

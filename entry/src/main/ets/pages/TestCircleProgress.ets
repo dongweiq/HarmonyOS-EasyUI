@@ -14,7 +14,7 @@
  */
 
 
-import { CircleProgress } from 'easyui'
+import { CircleProgress } from '@isrc/easyui'
 @Entry
 @Component
 struct TestCircleProgress {

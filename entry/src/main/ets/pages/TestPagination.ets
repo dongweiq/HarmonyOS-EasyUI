@@ -14,7 +14,7 @@
  */
 
 
-import {Pagination_basic,Pagination_simple,Pagination_ellipses} from "easyui"
+import {Pagination_basic,Pagination_simple,Pagination_ellipses} from "@isrc/easyui"
 
 @Entry
 @Component

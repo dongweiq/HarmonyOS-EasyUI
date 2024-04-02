@@ -14,7 +14,7 @@
  */
 
 
-import {CustomSteps,CustomSteps_vertical} from "easyui"
+import {CustomSteps,CustomSteps_vertical} from "@isrc/easyui"
 @Entry
 @Component
 struct TestCustomSteps {

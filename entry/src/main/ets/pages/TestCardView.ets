@@ -14,7 +14,7 @@
  */
 
 
-import { CardView } from "easyui"
+import { CardView } from "@isrc/easyui"
 @Entry
 @Component
 struct TestCardView {

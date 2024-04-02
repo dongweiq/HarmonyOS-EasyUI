@@ -14,7 +14,7 @@
  */
 
 
-import { ImageCurtain } from 'easyui'
+import { ImageCurtain } from '@isrc/easyui'
 @Entry
 @Component
 struct TestImageCurtain {

@@ -14,7 +14,7 @@
  */
 
 
-import {Collapse,Collapse_group,Collapse_panel} from "easyui"
+import {Collapse,Collapse_group,Collapse_panel} from "@isrc/easyui"
 
 @Entry
 @Component

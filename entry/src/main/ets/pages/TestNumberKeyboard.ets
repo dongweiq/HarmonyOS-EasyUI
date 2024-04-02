@@ -14,7 +14,7 @@
  */
 
 
-import { NumberKeyboard_custom, NumberKeyboard_default } from 'easyui'
+import { NumberKeyboard_custom, NumberKeyboard_default } from '@isrc/easyui'
 import promptAction from '@ohos.promptAction'
 @Entry
 @Component

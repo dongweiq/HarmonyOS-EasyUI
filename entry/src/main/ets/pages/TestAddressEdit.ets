@@ -14,7 +14,7 @@
  */
 
 
-import { AddressEdit } from 'easyui'
+import { AddressEdit } from '@isrc/easyui'
 @Entry
 @Component
 struct TestAddressEdits {

@@ -15,7 +15,7 @@
 
 
 
-import { Cell } from 'easyui'
+import { Cell } from '@isrc/easyui'
 @Entry
 @Component
 struct Main {

@@ -14,7 +14,7 @@
  */
 
 
-import {MaskGuideView} from "easyui"
+import {MaskGuideView} from "@isrc/easyui"
 import router from '@ohos.router'
 @Entry
 @Component

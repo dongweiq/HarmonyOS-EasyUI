@@ -14,7 +14,7 @@
  */
 
 
-import { LabelView } from 'easyui'
+import { LabelView } from '@isrc/easyui'
 import prompt from '@ohos.prompt'
 @Entry
 @Component
