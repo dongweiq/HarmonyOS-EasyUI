@@ -1,14 +1,42 @@
 {
   "app": {
-
     "products": [
       {
-        "compileSdkVersion": 10,
-        "compatibleSdkVersion": 9,
+        "compileSdkVersion": "5.0.0(12)",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
         "name": "default",
         "signingConfig": "default"
       }
     ],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/edy/.ohos/config/default_ohos_easyui_vyY0F020wTYP6gzizWFqrceN4CsnMe3pGpIl11Sqj88=.cer",
+          "storePassword": "0000001A7CB557D3C9EC3E5971E89AF65E9F5D5546804185C38089C33E69B6804C0CBAC21E176D99E3FF",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001ADF3969C6E83A43B236790C2EF6043C436599EE68A58ED253B9909DE04921B6823F9B653B5036",
+          "profile": "/Users/edy/.ohos/config/default_ohos_easyui_vyY0F020wTYP6gzizWFqrceN4CsnMe3pGpIl11Sqj88=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/edy/.ohos/config/default_ohos_easyui_vyY0F020wTYP6gzizWFqrceN4CsnMe3pGpIl11Sqj88=.p12"
+        }
+      },
+      {
+        "name": "test",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/edy/.ohos/config/test_ohos_easyui_vyY0F020wTYP6gzizWFqrceN4CsnMe3pGpIl11Sqj88=.cer",
+          "storePassword": "0000001ABC2D2700A66F53FFDD0AF29F45563F65C78D93307E1BF2A462BB2396548A62C1571EBCC7EAEA",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A1BEC05DFE6C86C5C754B666E5201B6193060B107AB09AD7EFCF773D85F0CC886AB55F5FFEF4B",
+          "profile": "/Users/edy/.ohos/config/test_ohos_easyui_vyY0F020wTYP6gzizWFqrceN4CsnMe3pGpIl11Sqj88=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/edy/.ohos/config/test_ohos_easyui_vyY0F020wTYP6gzizWFqrceN4CsnMe3pGpIl11Sqj88=.p12"
+        }
+      }
+    ]
   },
   "modules": [
     {
